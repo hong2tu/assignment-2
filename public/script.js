@@ -9,7 +9,7 @@ fetch(endpoint)
 function findMatches(wordToMatch, food) {
   return food.filter(place => {
     const regex = new RegExp(wordToMatch, 'gi');
-    return place.name.match(regex)
+    return place.name.match(regex) || place.category.match(regex)
   });
 }
 
@@ -22,13 +22,16 @@ function displayMatches() {
     const html = matchArray.map(place => {
       const regex = new RegExp(this.value, 'gi');
       const restaurantName = place.name.replace(regex, `<span class="hl">${this.value}</span>`);
+      const categoryName = place.category
       return `
         <li>
-          <span class="name">${restaurantName.toUpperCase()}</span>
-          <span class="category">${place.category}</span> <br>
-          <span class="address_line_1">${place.address_line_1}</span> <br>
-          <span class="city">${place.city}</span> <br>
-          <span class="zip">${place.zip}</span> <br>
+          <span class="name">${restaurantName.toUpperCase()}</span> <br>
+          <span class="category">${categoryName}</span> <br>
+          <address>
+            <span class="address_line_1">${place.address_line_1}</span> <br>
+            <span class="city">${place.city}</span> <br>
+            <span class="zip">${place.zip}</span> <br>
+          </address>
         </li>
       `;
     }).join('');
