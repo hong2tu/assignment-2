@@ -7,6 +7,9 @@ fetch(endpoint)
     .then(data => food.push(...data));
 
 function findMatches(wordToMatch, food) {
+  if(wordToMatch === ''){
+    return []
+  }
   return food.filter(place => {
     const regex = new RegExp(wordToMatch, 'gi');
     return place.name.match(regex) || place.category.match(regex)
