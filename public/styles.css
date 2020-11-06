@@ -1,2 +1,40 @@
 
   
+  /* New for Lab 7 */
+  h1 {
+    margin: 20px 50px;
+    padding: 0 20px;
+    min-height: 75px;
+    background-color: lightcoral;
+    color: white;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    flex-wrap: nowrap;
+    border-radius: 4px;
+  }
+
+
+  ul {
+    list-style-type: none;
+    border: 2px pink;
+    background-color:lightblue;
+    margin: 0;
+    padding: 0;
+    color: #204056;
+    font-size: 18px;
+    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+    padding: 1em;
+  }
+
+  li {
+      margin: 5px;
+      background-color: D7B9D5; 
+      max-width: 30%;
+  }
+
+  
