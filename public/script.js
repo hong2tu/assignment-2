@@ -24,7 +24,7 @@ function displayMatches() {
       const restaurantName = place.name.replace(regex, `<span class="hl">${this.value}</span>`);
       return `
         <li>
-          <span class="name">${restaurantName}</span>
+          <span class="name">${restaurantName.toUpperCase()}</span>
           <span class="category">${place.category}</span> <br>
           <span class="address_line_1">${place.address_line_1}</span> <br>
           <span class="city">${place.city}</span> <br>
