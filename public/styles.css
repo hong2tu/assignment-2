@@ -2,18 +2,19 @@
   
   /* New for Lab 7 */
   h1 {
-    margin: 20px 50px;
-    padding: 0 20px;
-    min-height: 75px;
-    background-color: lightcoral;
+    margin: 20px 0px;
+    padding: 9px;
+    min-height: 75px;   
+    background-color:rgb(167, 92, 211);
     color: white;
     display: flex;
     
-    align-items: center;
-    justify-content: center;
+    
+  
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 25pt;
     text-transform: capitalize;
+    text-decoration: underline;
     flex-wrap: nowrap;
     border-radius: 4px;
   }
@@ -28,7 +29,7 @@
     color: #204056;
     font-size: 18px;
     font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
-    padding: 1em;
+    
   }
 
   body {
@@ -40,6 +41,9 @@
       background: rgb(2,0,36);
       background: linear-gradient(0deg, rgb(190, 188, 218) 0%, rgb(206, 146, 214) 35%, rgb(223, 42, 223) 100%);
       max-width: 30%;
+  }
+  .search{
+      margin-left: 5px;
   }
 
   
