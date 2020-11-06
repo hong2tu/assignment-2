@@ -13,10 +13,6 @@ function findMatches(wordToMatch, food) {
   });
 }
 
-function numberWithCommas(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-}
-
 function displayMatches() {
     const matchArray = findMatches(this.value, food);
     const html = matchArray.map(place => {
