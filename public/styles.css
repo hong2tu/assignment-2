@@ -1,2 +1,30 @@
 
   
+  /* New for Lab 7 */
+  h1 {
+    margin: 20px 50px;
+    padding: 0 20px;
+    min-height: 75px;
+    background-color: darkcyan;
+    color: white;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    flex-wrap: nowrap;
+    border-radius: 4px;
+  }
+  
+  #chartContainer {
+      background: gray;
+      border: 2px dotted black;
+      border-radius: 4px;
+      height: 500px;
+      width: 100%;
+      margin-bottom: 15px;
+  }
+
+  
